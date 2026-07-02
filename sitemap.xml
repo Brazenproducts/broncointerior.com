@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://broncointerior.com/</loc></url>
-<url><loc>https://broncointerior.com/best-floor-liners.html</loc></url>
-<url><loc>https://broncointerior.com/best-grab-handles.html</loc></url>
-<url><loc>https://broncointerior.com/best-console-organizers.html</loc></url>
-<url><loc>https://broncointerior.com/buyers-guide.html</loc></url>
+  <url><loc>https://broncointerior.com/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://broncointerior.com/best-floor-liners.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://broncointerior.com/best-grab-handles.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://broncointerior.com/best-console-organizers.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://broncointerior.com/buyers-guide.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://broncointerior.com/contact.html</loc><lastmod>2026-04-20</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
