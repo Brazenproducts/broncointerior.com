@@ -16,7 +16,6 @@
 body { font-family: 'Inter', sans-serif; background: #0f0f0f; color: #e5e5e5; line-height: 1.6; }
 a { color: inherit; text-decoration: none; }
 
-/* nav */
 .site-nav { background: #1a1a1a; border-bottom: 3px solid #ff9900; padding: 0.9rem 1.5rem; }
 .nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
 .nav-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
@@ -25,7 +24,6 @@ a { color: inherit; text-decoration: none; }
 .nav-links a { font-size: 0.8rem; font-weight: 600; color: #9ca3af; padding: 0.3rem 0.7rem; border-radius: 4px; }
 .nav-links a:hover { color: #e5e5e5; background: #2a2a2a; }
 
-/* hero */
 .hero { background: #1a1a1a; border-bottom: 1px solid #2a2a2a; padding: 3rem 1.5rem 2.5rem; }
 .hero-inner { max-width: 960px; margin: 0 auto; }
 .hero-tag { font-size: 0.7rem; font-weight: 700; color: #ff9900; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 0.6rem; }
@@ -34,7 +32,6 @@ a { color: inherit; text-decoration: none; }
 .hero-desc { font-size: 0.97rem; color: #9ca3af; max-width: 700px; margin-bottom: 0.5rem; }
 .hero-meta { font-size: 0.75rem; color: #9ca3af; opacity: 0.7; }
 
-/* bartact block */
 .bartact-block { max-width: 960px; margin: 2.5rem auto 0; padding: 0 1.5rem; }
 .bartact-inner { background: #1a1a1a; border: 2px solid #ff9900; border-radius: 10px; padding: 1.5rem; display: flex; gap: 1.5rem; align-items: flex-start; }
 .bartact-badge { font-size: 0.68rem; font-weight: 800; color: #ff9900; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.6rem; }
@@ -45,10 +42,24 @@ a { color: inherit; text-decoration: none; }
 .btn-bartact { display: inline-block; background: #ff9900; color: #0f0f0f; font-weight: 800; font-size: 0.85rem; padding: 0.65rem 1.4rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
 .btn-bartact:hover { opacity: 0.88; }
 
-/* category grid */
-.wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+/* Product picks section */
+.picks-section { max-width: 960px; margin: 2.5rem auto 0; padding: 0 1.5rem 3rem; }
 .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700; color: #ff9900; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; }
 .section-label::after { content: ''; flex: 1; height: 1px; background: #2a2a2a; }
+
+.prod-card { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.75rem 0; border-bottom: 1px solid #2a2a2a; }
+.prod-card:last-child { border-bottom: none; }
+.prod-img-link { flex-shrink: 0; display: block; }
+.prod-img-link img { width: 160px; height: 160px; object-fit: contain; border-radius: 8px; background: #1a1a1a; border: 1px solid #2a2a2a; }
+.prod-body { flex: 1; }
+.prod-num { font-size: 0.68rem; font-weight: 800; color: #ff9900; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.35rem; }
+.prod-body h3 { font-size: 1rem; font-weight: 700; color: #e5e5e5; margin-bottom: 0.5rem; line-height: 1.35; }
+.prod-body p { font-size: 0.88rem; color: #9ca3af; line-height: 1.55; margin-bottom: 0.9rem; }
+.btn-amz { display: inline-block; background: #ff9900; color: #0f0f0f; font-weight: 800; font-size: 0.82rem; padding: 0.55rem 1.2rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+.btn-amz:hover { opacity: 0.88; }
+
+/* category grid */
+.wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
 .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
 .cat-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.4rem 1.5rem; display: flex; flex-direction: column; gap: 0.4rem; transition: border-color 0.15s, transform 0.15s; }
 .cat-card:hover { border-color: #ff9900; transform: translateY(-2px); }
@@ -58,14 +69,12 @@ a { color: inherit; text-decoration: none; }
 .cat-link { font-size: 0.78rem; font-weight: 700; color: #ff9900; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 0.25rem; }
 .cat-link:hover { text-decoration: underline; }
 
-/* footer */
 .site-footer { background: #1a1a1a; border-top: 1px solid #2a2a2a; padding: 1.5rem; text-align: center; font-size: 0.75rem; color: #9ca3af; }
-.site-footer nav { margin-bottom: 0.5rem; flex-wrap: wrap; display: flex; justify-content: center; gap: 0.25rem 0.75rem; }
+.site-footer nav { margin-bottom: 0.5rem; flex-wrap: wrap; display: flex; justify-center; gap: 0.25rem 0.75rem; }
 .site-footer a { color: #9ca3af; }
 .site-footer a:hover { color: #ff9900; }
 .disclaimer { font-size: 0.72rem; color: #9ca3af; text-align: center; padding: 1.25rem 1.5rem; border-top: 1px solid #2a2a2a; }
 
-/* cookie banner */
 #ck-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #111; color: #ccc; font-size: 0.78rem; padding: 0.8rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; z-index: 9999; border-top: 1px solid #333; }
 #ck-banner button { background: #ff9900; color: #0f0f0f; border: none; padding: 0.4rem 1rem; border-radius: 4px; cursor: pointer; font-weight: 700; font-size: 0.78rem; }
 
@@ -73,7 +82,10 @@ a { color: inherit; text-decoration: none; }
   .bartact-inner { flex-direction: column; }
   .bartact-img img { width: 140px; height: 140px; }
   .hero h1 { font-size: 1.5rem; }
-}</style>
+  .prod-card { flex-direction: column; }
+  .prod-img-link img { width: 100%; height: 200px; }
+}
+  </style>
 </head>
 <body>
 
@@ -84,8 +96,8 @@ a { color: inherit; text-decoration: none; }
       <a href="https://broncoseatcover.com" target="_blank" rel="noopener">Seat Covers</a>
       <a href="https://broncograbhandles.com" target="_blank" rel="noopener">Grab Handles</a>
       <a href="https://broncofloormats.com" target="_blank" rel="noopener">Floor Liners</a>
-      <a href="https://broncomolle.com" target="_blank" rel="noopener">MOLLE & Storage</a>
-      <a href="https://broncocargo.com" target="_blank" rel="noopener">Cargo & Overhead</a>
+      <a href="https://broncomolle.com" target="_blank" rel="noopener">MOLLE &amp; Storage</a>
+      <a href="https://broncocargo.com" target="_blank" rel="noopener">Cargo &amp; Overhead</a>
       <a href="https://broncoheadliner.com" target="_blank" rel="noopener">Headliners</a>
     </div>
   </div>
@@ -116,45 +128,103 @@ a { color: inherit; text-decoration: none; }
   </div>
 </div>
 
+<div class="picks-section">
+  <div class="section-label">Amazon Top Picks — Ford Bronco Interior</div>
+  
+        <div class="prod-card">
+          <a href="https://www.amazon.com/dp/B0FYC7QM9H?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="prod-img-link">
+            <img src="https://m.media-amazon.com/images/I/51o6DPWM0DL._SL500_.jpg" alt="FaiFani Car Seat Covers Full Set for Ford Bronco 4-Door 2021-2026, Luxury Faux Leather" loading="lazy" width="320" height="320">
+          </a>
+          <div class="prod-body">
+            <div class="prod-num">#2</div>
+            <h3>FaiFani Car Seat Covers Full Set for Ford Bronco 4-Door 2021-2026, Luxury Faux Leather</h3>
+            <p>Custom fit for Ford Bronco 4-Door and Bronco Sport 2021-2026. Luxury faux leather, breathable, anti-slip, protects all 5 seats.</p>
+            <a href="https://www.amazon.com/dp/B0FYC7QM9H?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="btn-amz">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <a href="https://www.amazon.com/dp/B0G8VNY1VP?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="prod-img-link">
+            <img src="https://m.media-amazon.com/images/I/51E2+0R1f1L._SL500_.jpg" alt="Custom Ford Bronco Seat Covers 2021-2026, Waterproof Faux Leather Full Set with Rear Cup Holder" loading="lazy" width="320" height="320">
+          </a>
+          <div class="prod-body">
+            <div class="prod-num">#3</div>
+            <h3>Custom Ford Bronco Seat Covers 2021-2026, Waterproof Faux Leather Full Set with Rear Cup Holder</h3>
+            <p>Precision-fit seat covers for Ford Bronco 4-Door 2021-2026. Waterproof faux leather, full set with rear cup holder cutout.</p>
+            <a href="https://www.amazon.com/dp/B0G8VNY1VP?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="btn-amz">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <a href="https://www.amazon.com/dp/B0DY8WRH5M?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="prod-img-link">
+            <img src="https://m.media-amazon.com/images/I/41la7BuUfDL._SL500_.jpg" alt="Holda Neoprene Seat Covers for Ford Bronco 4-Door 2021-2026, Water-Resistant Snug Fit" loading="lazy" width="320" height="320">
+          </a>
+          <div class="prod-body">
+            <div class="prod-num">#4</div>
+            <h3>Holda Neoprene Seat Covers for Ford Bronco 4-Door 2021-2026, Water-Resistant Snug Fit</h3>
+            <p>Custom fit neoprene front and rear seat covers for Ford Bronco 4-Door 2021-2026. Water-resistant, snug fit, durable construction.</p>
+            <a href="https://www.amazon.com/dp/B0DY8WRH5M?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="btn-amz">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <a href="https://www.amazon.com/dp/B0D7K7ST9H?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="prod-img-link">
+            <img src="https://m.media-amazon.com/images/I/41OjUGpx6XL._SL500_.jpg" alt="DV8 Center Console MOLLE Panels for 2021-2026 Ford Bronco, Steel Construction Black Powder Coat" loading="lazy" width="320" height="320">
+          </a>
+          <div class="prod-body">
+            <div class="prod-num">#5</div>
+            <h3>DV8 Center Console MOLLE Panels for 2021-2026 Ford Bronco, Steel Construction Black Powder Coat</h3>
+            <p>Steel MOLLE console panels for Ford Bronco 2021-2026. Mounts quick-access gear. Durable black powder coat finish.</p>
+            <a href="https://www.amazon.com/dp/B0D7K7ST9H?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="btn-amz">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <a href="https://www.amazon.com/dp/B0BRHW3R8P?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="prod-img-link">
+            <img src="https://m.media-amazon.com/images/I/51wY-RR+dLL._SL500_.jpg" alt="Mabett Door Handle Storage Organizer for Ford Bronco 2021-2026, 4-Door Grab Handle Pocket 4PCS" loading="lazy" width="320" height="320">
+          </a>
+          <div class="prod-body">
+            <div class="prod-num">#6</div>
+            <h3>Mabett Door Handle Storage Organizer for Ford Bronco 2021-2026, 4-Door Grab Handle Pocket 4PCS</h3>
+            <p>Inner door handle storage trays for Ford Bronco 4-Door 2021-2026. Creates usable storage space by every grab handle.</p>
+            <a href="https://www.amazon.com/dp/B0BRHW3R8P?tag=brazenprodu01-20" target="_blank" rel="nofollow noopener" class="btn-amz">View on Amazon &rarr;</a>
+          </div>
+        </div>
+</div>
+
 <div class="wrap">
   <div class="section-label">Shop by Category</div>
   <div class="cat-grid">
-    
     <a href="https://broncoseatcover.com" target="_blank" rel="noopener" class="cat-card">
       <div class="cat-icon">🪑</div>
       <h2>Seat Covers</h2>
       <p>Bartact tactical seat covers with MOLLE seatback webbing and SRS airbag-compatible seams. The single most important interior upgrade for any trail-use Bronco.</p>
       <span class="cat-link">See Top Picks →</span>
     </a>
-
     <a href="https://broncograbhandles.com" target="_blank" rel="noopener" class="cat-card">
       <div class="cat-icon">✊</div>
       <h2>Grab Handles</h2>
       <p>Mil-spec roll bar grab handles for doorless trail driving. Color-matched to the Bartact lineup. No drilling required.</p>
       <span class="cat-link">See Top Picks →</span>
     </a>
-
     <a href="https://broncofloormats.com" target="_blank" rel="noopener" class="cat-card">
       <div class="cat-icon">🟫</div>
       <h2>Floor Liners</h2>
       <p>WeatherTech DigitalFit and competing liners built around the Bronco drain plug system. Protect the floor from the first trail run.</p>
       <span class="cat-link">See Top Picks →</span>
     </a>
-
     <a href="https://broncomolle.com" target="_blank" rel="noopener" class="cat-card">
       <div class="cat-icon">🎒</div>
-      <h2>MOLLE & Storage</h2>
+      <h2>MOLLE &amp; Storage</h2>
       <p>Bartact door bags, console panels, and MOLLE accessories that turn the Bronco cab into an organized tactical build.</p>
       <span class="cat-link">See Top Picks →</span>
     </a>
-
     <a href="https://broncocargo.com" target="_blank" rel="noopener" class="cat-card">
       <div class="cat-icon">📦</div>
-      <h2>Cargo & Overhead</h2>
+      <h2>Cargo &amp; Overhead</h2>
       <p>Overhead racks, cargo nets, and storage systems for the Bronco interior. Maximize the usable space on multi-day trail trips.</p>
       <span class="cat-link">See Top Picks →</span>
     </a>
-
     <a href="https://broncoheadliner.com" target="_blank" rel="noopener" class="cat-card">
       <div class="cat-icon">🏠</div>
       <h2>Headliners</h2>
@@ -171,8 +241,8 @@ a { color: inherit; text-decoration: none; }
     <a href="https://broncoseatcover.com" target="_blank" rel="noopener">Seat Covers</a>
     <a href="https://broncograbhandles.com" target="_blank" rel="noopener">Grab Handles</a>
     <a href="https://broncofloormats.com" target="_blank" rel="noopener">Floor Liners</a>
-    <a href="https://broncomolle.com" target="_blank" rel="noopener">MOLLE & Storage</a>
-    <a href="https://broncocargo.com" target="_blank" rel="noopener">Cargo & Overhead</a>
+    <a href="https://broncomolle.com" target="_blank" rel="noopener">MOLLE &amp; Storage</a>
+    <a href="https://broncocargo.com" target="_blank" rel="noopener">Cargo &amp; Overhead</a>
     <a href="https://broncoheadliner.com" target="_blank" rel="noopener">Headliners</a>
     <a href="https://bartact.com" target="_blank" rel="noopener">Bartact</a>
     <a href="contact.html">Contact</a>
